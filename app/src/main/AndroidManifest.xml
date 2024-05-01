@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quizz"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.code.CodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.code.CodeCategory"
+            android:exported="false"
+            android:label="@string/title_activity_code_category"
+            android:theme="@style/Theme.Quizz.NoActionBar" />
+        <activity
+            android:name=".chapter.four.javascript"
+            android:exported="false" />
+        <activity
+            android:name=".chapter.two.php"
+            android:exported="false" />
+        <activity
+            android:name=".chapter.one.Android"
+            android:exported="false" />
+        <activity
+            android:name=".chapter.one.java"
+            android:exported="false" />
+        <activity
+            android:name=".chaptertopics.TopicActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
